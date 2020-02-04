@@ -1,4 +1,4 @@
-export ZSH="$HOME/.oh-my-zsh"
+export ZSH="$HOME/dotfiles/.oh-my-zsh"
 
 ZSH_THEME="robbyrussell"
 
@@ -18,4 +18,4 @@ autoload -U edit-command-line
 zle -N edit-command-line
 bindkey '\C-x\C-e' edit-command-line
 
-source ~/github/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/dotfiles/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
