@@ -7,7 +7,15 @@ export VISUAL=emacs
 export GIT_EDITOR=emacs
 alias e='emacs'
 
-chpwd() ls -G
+# Platform specific settings
+case "$OSTYPE" in
+	darwin*)
+		source ~/dotfiles/zsh/zshrc.macos
+	;;
+	linux*)
+		source ~/dotfiles/zsh/zshrc.linux
+	;;
+esac
 
 plugins=(git dotnet zsh_reload)
 
