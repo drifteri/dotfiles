@@ -1,8 +1,10 @@
-export ZSH="/home/toni/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME="robbyrussell"
 
-EDITOR=emacs
+export EDITOR=emacs
+export VISUAL=emacs
+export GIT_EDITOR=emacs
 alias e='emacs'
 
 chpwd() ls -G
@@ -16,4 +18,4 @@ autoload -U edit-command-line
 zle -N edit-command-line
 bindkey '\C-x\C-e' edit-command-line
 
-source /home/toni/github/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/github/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
